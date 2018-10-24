@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: black;
+}
+.blue {
+  background: LightSkyBlue;
+  height: 500px;
+}
+
+.green {
+  background: LightGreen;
+  height: 500px;
+}
+
+.purple {
+  background: plum;
+  height: 500px;
+}
+
+.carousel-indicators li {
+  transform: rotate(90deg);
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  margin-top: 10vh;
+}
+
+.carousel-indicators li:nth-child(2) {
+  top: 10vh;
+}
+
+.carousel-indicators li:nth-child(3) {
+  top: 20vh;
+}
+
+.carousel-indicators {
+  top: 151px;
+  width: 3px;
+  margin-left: 0;
+  display: block;
+}
+
+.bloc {
+  height: auto;
+  border: 1px solid black;
+  background: plum;
+}
+
+.bloc:nth-child(2){background: LightYellow}
+.bloc:nth-child(3){background: DeepSkyBlue}
+
+.jbt-class {
+  background: Aquamarine;
+  margin-bottom: 0;
+}
+
+.btn-class {
+  margin-top: 15px;
+}

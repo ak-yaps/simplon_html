@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width:460px) and (max-width:959px) {
+
+  div#wrap {
+    width: auto;
+    max-width: 959px;
+    margin: 0;
+    padding: 0;
+  }
+  section.bloc {
+    width: 100%;
+    height: auto;
+    float: left;
+    margin-top: 70px;
+  }
+  section.bloc:nth-child(2), section.bloc:nth-child(4), section.bloc:nth-child(5) {
+    height: auto;
+  }
+  section.bloc:nth-child(3), section.bloc:nth-child(6) {
+    margin-top: 160px;
+  }
+  article.rosa {
+    background: url(../img/rosa-320.jpg) 0 0 no-repeat;
+    width: 320px;
+    height: 457px;
+    line-height: 457px;
+  }
+  h2.titre {
+    font-size: 140pt;
+  }
+  .line {
+    line-height: 457px;
+  }
+  article.txt {
+    height: 457px;
+  }
+  article.bloc_1 {
+    width: 50%;
+    height: 571px;
+    float: left;
+    background: url(../img/bloc1.gif) 0 0 no-repeat;
+  }
+  article.droite {
+    width: 50%;
+    height: 571px;
+    box-shadow: 2px 0 60px #cfddea;
+    float: left;
+    padding: 0;
+  }
+  article.pin {
+    width: 100%;
+    height: 329px;
+    background: url(../img/pin.jpg) 0 0 no-repeat;
+  }
+  article.gauche {
+    width: 50%;
+    padding: 0;
+  }
+  article.xmas {
+    width: 100%;
+    height: 355px;
+  }
+  article.bloc_2 {
+    width: 50%;
+  }
+  article.phone {
+    width: 50%;
+  }
+  p.contact {
+    width: 50%;
+    padding-left: 15px;
+  }
+  div.bd {
+    display: none;
+  }
+  section.nav {
+    display: none;
+  }
+
+  section.nav.is-active {
+    display: block;
+    width: auto;
+    background: rgba(207, 221, 234, 0.5);
+    top: 0;
+  }
+
+    #burger {
+      display: block;
+    position: fixed;
+    font-size: 2em;
+    padding: 10px;
+  }
+}

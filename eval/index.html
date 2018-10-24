@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="author" content="Ayaba Kumako">
+  <title>Evaluation HTML/CSS</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- <script src="app.js"></script> -->
+</head>
+
+<body>
+  <div id="wrap">
+    <header>
+      <button id="btn">bouton</button>
+    </header>
+    <aside id="res"></aside>
+    <main id="main_content">
+      <div class="main"></div>
+      <div class="main"></div>
+      <div class="main"></div>
+      <div class="main"></div>
+    </main>
+    <footer></footer>
+  </div>
+  <script type="text/javascript">
+    let btn = document.getElementById('btn');
+    let divRes = document.getElementById('res');
+    let wrap = document.getElementById('wrap');
+    let wrapChildren = Array.from(wrap.children);
+    let wrapChildrenLength = wrap.children.length;
+    let allEl = Array.from(wrap.getElementsByTagName('*'));
+    console.log(allEl);
+
+    btn.addEventListener("click", function () {
+      for (let i = 0; i < wrapChildren.length; i++) {
+        if (wrapChildren[i].childElementCount > 0) {
+          wrapChildrenLength += wrapChildren[i].childElementCount;
+        }
+      }
+      return divRes.innerHTML = wrapChildrenLength;
+    });
+
+allEl.forEach(e => {
+  e.addEventListener("click", ()=> {
+    e.classList.toggle("active");
+  })
+})
+  </script>
+</body>
+
+</html>

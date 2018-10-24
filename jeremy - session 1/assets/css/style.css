@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 1.4em;
+  font-family: 'Lato', sans-serif;
+}
+
+a {
+  background: white;
+  color: black;
+}
+
+.ancrage {
+  height: 2000px;
+  background: plum;
+  color: black;
+}
+
+.color_container, .color_container2 {
+  width: 900px;
+  height: auto;
+  margin: 0 auto;
+  background: grey;
+  color: lightgrey;
+}
+
+.color_container2 {
+display: flex;
+}
+
+.color {
+  width: calc(100% / 3);
+  height: 300px;
+}
+
+.aliceblue {
+  background-color: aliceblue;
+  color: #222;
+  position: absolute;
+  top: 20px;
+  left: 50px;
+}
+
+.antiquewhite {
+  background-color: antiquewhite;
+  color: #222;
+  position: relative;
+  top: 20px;
+  left: 50px;
+}
+
+.hotpink {
+  background-color: hotpink;
+  color: #222;
+  float: left;
+}
+
+.seagreen {
+  background-color: lightseagreen;
+  color: #222;
+  float: left;
+}
+
+.sienna {
+  background-color: sienna;
+  color: #222;
+  /*position: fixed;*/
+  top: 25%;
+  left: 0;
+
+}
+
+.plum {
+  background-color: plum;
+  color: #222;
+  float: left;
+}
+
+.gold {
+  background-color: gold;
+  color: #222;
+  float: left;
+}
+
+.tan {
+  background-color: tan;
+  color: #222;
+  float: left;
+}
+
+.teal {
+  background-color: teal;
+  color: #222;
+  float: left;
+}
+
+.pink {
+  background: deeppink;
+}
+
+.yellow {
+  background: palegoldenrod;
+}
+
+.brown {
+  background: burlywood;
+}
+
+.green {
+  background: darkgreen ;
+}
+
+.cyan {
+  background: cadetblue;
+}
+
+.red {
+  background-color: darkred;
+}
+
+.blue {
+  background-color: midnightblue;
+}
+
+.purple {
+  background: darkmagenta;
+}
+
+.gray {
+  background: silver;
+}
+
+hr {
+  width: 500px;
+  border: 5px solid maroon;
+  margin: 50px auto;
+}
+
+span {
+  color: wheat;
+  font-weight: bold;
+  border-bottom: 1px solid violet;
+}
+
+.photo {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 200px auto;
+  border: 2px solid navy;
+}

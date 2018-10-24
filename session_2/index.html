@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Formulaire PHP</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+  <script>
+    function getValue(val) {
+      document.getElementById('display_price').innerHTML = val + ' &euro;';
+    }
+  </script>
+  <script src="app.js"></script>
+</head>
+
+<body>
+  <h1>HTML SESSION 2 - Formulaire</h1>
+
+  <form action="traitement.php" method="post" class="select-block">
+    <fieldset>
+      <legend>Le roi de l'auto</legend>
+      <label for="brand" class="block">MARQUE</label>
+      <select name="brand" id="brand">
+    <option value="mercedes">mercedes</option>
+    <option value="audi">audi</option>
+    <option value="range rover">range rover</option>
+    <option value="toyota">toyota</option>
+    <option value="renault">renault</option>
+    <option value="buggati">buggati</option>
+    <option value="hyundai">hyundai</option>
+    <option value="maserati">maserati</option>
+  </select>
+
+      <label for="gamme" class="block">GAMME</label>
+      <select name="gamme" id="gamme" class="block">
+    <option value="berline">berline</option>
+    <option value="citadine">citadine</option>
+    <option value="crossover">crossover</option>
+    <option value="pick-up">pick-up</option>
+    <option value="sportive">sportive</option>
+    <option value="électriques">électriques</option>
+    <option value="hybrides">hybrides</option>
+    <option value="familiales">familiales</option>
+  </select>
+
+      <label for="etat" class="block">ETAT</label>
+      <label for="neuf_occasion">Neuf & Occasion</label>
+      <input type="radio" name="state" value="neuf_occasion" id="neuf_occasion">
+      <label for="neuf">Neuf</label>
+      <input type="radio" name="state" value="neuf" id="neuf">
+      <label for="occasion">Occasion</label>
+      <input type="radio" name="state" value="occasion" id="occasion">
+
+      <label for="prix_max" class="block">PRIX MAX (en &euro;)</label>
+      <input type="range" name="prix_max" value="prix_max" id="prix_max" min="1000" max="100000" step="500" onchange="getValue(this.value)">
+      <span id="display_price"></span>
+      <button class="block">OK</button>
+    </fieldset>
+  </form>
+
+
+  <form action="traitement.php" method="post" id="inscription" enctype="multipart/form-data">
+    <fieldset>
+      <legend>Inscription</legend>
+      <input type="text" name="name" placeholder="성" required>
+      <input type="text" name="lastname" placeholder="이름" required>
+      <input type="email" name="email" placeholder="메일" required>
+      <input name="phone" type="tel" placeholder="전화번호" required>
+      <input type="pseudo" name="" placeholder="가명" value="">
+      <input type="password" name="" placeholder="비밀번호" required>
+      <label for="avatar">Avatar</label>
+      <input type="file" name="avatar">
+      <label for="birthday">Date de naissance</label>
+      <input type="date" name="birthday">
+      <input type="submit" name="register" value="go!">
+    </fieldset>
+  </form>
+
+  <form action="traitement.php" method="post" id="music_search">
+    <fieldset>
+      <legend>Search Music</legend>
+      <label for="music_search" class="label_music">Choisir un genre musical</label>
+      <input type="text" list="genre_music" placeholder="genre musical" class="user-input" name="genre_music">
+      <input class="music_search" type="submit" value="Search">
+      <datalist id="genre_music" name="genre_music">
+        <option>Metal</option>
+        <option>Country</option>
+        <option>Dancehall</option>
+        <option>Hip Hop</option>
+        <option>Varièté</option>
+        <option>Soul</option>
+        <option>RnB</option>
+        <option>Kpop</option>
+        <option>Rock</option>
+        <option>Pop</option>
+        <option>Jazz</option>
+        <option>Blues</option>
+        <option>Classique</option>
+      </datalist>
+    </fieldset>
+  </form>
+
+  <input type="range" name="size" id="shape_shifter" min="100" max="500" value="250" step="1">
+  <div id="circle" class="circle">
+    <span class="size">250</span>
+    <span>px</span>
+  </div>
+
+
+
+</body>
+
+</html>

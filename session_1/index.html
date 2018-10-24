@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <title>HTML SESSION 1</title>
+  <style>
+    table,
+    td,
+    th {
+      border-style: solid;
+    }
+  </style>
+</head>
+
+<body>
+  <h3>Exercice 1 : inline & block</h3>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, maiores eos! Sint itaque praesentium asperiores tempore,<img src="img/html5.png" alt="html5" width="100" height="100"> deleniti veritatis sapiente tempora nam vero eum iusto commodi. Id
+    non sunt vel officia.</p>
+  <p>
+    <span style="color: red">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, possimus?</span>
+    <span style="color: violet">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, possimus?</span>
+    <span style="color: gold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, possimus?</span>
+    <a href="https://www.google.com">GOOGLE</a>
+  </p>
+
+  <h3>Exercice 2 : listes</h3>
+  <ol>
+    <li>Démarrer son navigateur</li>
+    <li>Ouvrir sa console</li>
+    <li>Coder</li>
+  </ol>
+  <ol>
+    <li>niveau 1.1</li>
+    <li>niveau 1.2
+      <ul>
+        <li>niveau 1.2.1
+          <ol>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ol>
+        </li>
+        <li>niveau 1.2.2</li>
+        <li>niveau 1.2.3</li>
+      </ul>
+    </li>
+    <li>niveau 1.3</li>
+  </ol>
+
+  <h3>Exercice 3: Tableaux</h3>
+  <table style="border-style:solid">
+    <tr>
+      <td>Pique</td>
+      <td>Coeur</td>
+    </tr>
+    <tr>
+      <td>Carreaux</td>
+      <td>Trèfle</td>
+    </tr>
+  </table>
+  <h4>Tableau 2</h4>
+  <table>
+    <tr style="text-align:center; font-weight:bold">
+      <td colspan="2"></td>
+      <td colspan="2">1er groupe</td>
+      <td colspan="2">2nd groupe</td>
+    </tr>
+    <tr style="text-align:center; font-weight:bold">
+      <td></td>
+      <td>Personne</td>
+      <td>Singulier</td>
+      <td>Pluriel</td>
+      <td>Singulier</td>
+      <td>Pluriel</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Présent</td>
+      <td>1</td>
+      <td>Je code</td>
+      <td>Nous codons</td>
+      <td>Je réussis</td>
+      <td>Nous réussissons</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Tu codes</td>
+      <td>Vous codez</td>
+      <td>Tu réussis</td>
+      <td>Vous réussissez</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>il/elle code</td>
+      <td>ils/elles codent</td>
+      <td>il/elle réussit</td>
+      <td>ils/elles réussissent</td>
+    </tr>
+  </table>
+  <table class="correction">
+    <thead>
+      <tr>
+        <th colspan="2"></th>
+        <th colspan="2">1er groupe</th>
+        <th colspan="2">2nd groupe</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td></td>
+        <td>Personne</td>
+        <td>Singulier</td>
+        <td>Pluriel</td>
+        <td>Singulier</td>
+        <td>Pluriel</td>
+      </tr>
+      <tr>
+        <td rowspan="3">Présent</td>
+        <td>1</td>
+        <td>Je code</td>
+        <td>Nous codons</td>
+        <td>Je réussis</td>
+        <td>Nous réussissons</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Tu codes</td>
+        <td>Vous codez</td>
+        <td>Tu réussis</td>
+        <td>Vous réussissez</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>il/elle code</td>
+        <td>ils/elles codent</td>
+        <td>il/elle réussit</td>
+        <td>ils/elles réussissent</td>
+
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>Exercice 4: player</h3>
+  <audio src="assets/Beautiful.mp3" controls></audio> <br>
+  <video src="assets/bunny.mp4" controls poster="img/bunny.png">
+
+    </video>
+</body>
+
+</html>

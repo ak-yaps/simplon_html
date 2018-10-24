@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+h1 {
+  text-align: center;
+  padding: 1% 0;
+}
+
+
+fieldset {
+  padding: 3%;
+  margin: 3%;
+  border: 1px solid silver;
+}
+
+legend {
+  padding: 1%;
+  font-size: 1.5em;
+}
+
+select {
+  padding: 1%;
+  border: 1px solid silver;
+  /*border-radius: 20%;*/
+}
+
+option {
+  text-transform: uppercase;
+}
+
+button {
+  padding: 1%;
+  margin: 2%;
+  background: transparent;
+  width: 10%;
+}
+
+label {
+  padding: 20px 0 10px;
+}
+
+input[type="radio"] {
+  margin: 0 1%;
+}
+
+.block {
+  display: block;
+}
+
+#display_price {
+  /*border: 1px solid black;*/
+  padding: 1%;
+  margin: 2% 0 2% 2%;
+  width: 10%;
+  text-align: center;
+  font-weight: 700;
+  vertical-align: top;
+}
+
+#display_price:empty {
+  display: none;
+}
+
+label {
+  font-weight: 600;
+}
+
+label[for="occasion"], label[for='neuf'], label[for='neuf_occasion'] {
+  font-weight: 300;
+}
+
+#inscription input {
+  border: 1px solid silver;
+  display: block;
+  margin: 2%;
+  padding: 1%;
+}
+
+#inscription input::placeholder {
+  color: silver;
+  opacity: 0.5;
+}
+
+.music_search {
+  background: black;
+  color: white;
+  margin: 0;
+}
+
+input[type='search'] {
+  padding: 1%;
+}
+
+.label_music {
+  display: block;
+  padding: 0;
+  margin-bottom: 2%;
+  font-weight: 400;
+}
+
+#shape_shifter {
+  margin: auto;
+display: flex;
+}
+
+.circle {
+  background: black;
+  border: 2px solid steelblue;
+  color: steelblue;
+  font-size: 1.5em;
+  width: 250px;
+  height: 250px;
+  margin: 20px auto;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*.circle span {
+  text-align: center;
+  vertical-align: center;
+}*/

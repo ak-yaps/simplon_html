@@ -1,0 +1,221 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width:460px) and (max-width:759px) {
+/* DEBUT BURGER*/
+#burger {
+  float: right;
+  line-height: 30px;
+  background: transparent;
+  border-radius: 10px;
+  border: 1px solid silver;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  margin-top: 9px;
+  transition: 500ms;
+  color:silver;
+}
+
+#burger:hover {
+  border-radius: 0;
+  border: 1px solid darkorange;
+  transition: 500ms;
+}
+.burger:hover {
+  color: darkorange;
+  transition: 500ms;
+}
+.burger.is-active {
+  color:darkorange;
+  transition: 500ms;
+}
+.navigation {
+  display: none;
+}
+.navigation.is-active {
+  display: block;
+}
+.navigation {
+  animation: yaps 500ms linear 1 backwards;
+  background: rgba(0,0,0,0.5);
+}
+
+@keyframes yaps{
+  0%{margin-top: 0%}
+  100%{margin-top: 49px;}
+}
+/*FIN BURGER*/
+
+
+
+
+
+
+
+  header {
+    width: 100%;
+    height: 49px;
+    background: url(../img/texture_nav.gif) repeat-x;
+  }
+  div.head {
+    width: 100%;
+    max-width: 100%;
+    height: 49px;
+    padding: 0 50px;
+  }
+  h3.logo {
+    line-height: 49px;
+    float: left;
+    margin-right: 100px;
+  }
+  nav {
+    width: 190px;
+    height: auto;
+    float: left;
+    padding: 20px;
+    margin-top: 49px;
+    border-radius: 10px;
+  }
+  nav ul li {
+    list-style: none;
+    display: block;
+    float: left;
+    width: 60px;
+    height: 49px;
+    line-height: 49px;
+    padding-left: 20px;
+  }
+  nav ul li a {
+    text-decoration: none;
+    color: silver;
+  }
+  div.slider {
+    width: 460px;
+    height: 165px;
+    background: url(../img/equipe2.jpg) 0 0 no-repeat;
+    background-size: cover;
+    min-width: 100%;
+    min-height: 100%;
+  }
+  div.sslider {
+    width: 100%;
+    height: 100px;
+    background: url(../img/texture_title.gif);
+  }
+  h1, h2 {
+    text-align: center;
+    color: white;
+  }
+  main {
+    width: 100%;
+  }
+  section.gauche {
+    height: 500px;
+    float: left;
+    width: 100%;
+    min-width: 460px;
+    padding: 0 15px;
+    margin-bottom: 20px;
+  }
+  video {
+    width: 100%;
+    height: auto;
+  }
+  h3.present {
+    font-size: 25px;
+    margin-bottom: 62px;
+    margin-top: 10px;
+  }
+  h3 {
+    color: silver;
+  }
+  h3.zonetxt {
+    margin-top: 10px;
+    text-transform: uppercase;
+  }
+  h4 {
+    color: darkgray;
+    margin: 20px 0;
+  }
+  article.txt {
+    height: 250px;
+    margin-right: 10px;
+  }
+  img.position {
+    float: right;
+  }
+  footer.description {
+    background: silver;
+    color: white;
+    width: 100%;
+    min-width: 460px;
+    height: auto;
+    padding: 10px;
+    margin-top: 8px;
+  }
+  section.rond {
+    width: 460px;
+    height: 210px;
+    margin: auto;
+  }
+  div.ovale {
+    width: 50%;
+    min-width: 227px;
+    background: OldLace;
+    float: left;
+    height: 210px;
+    border: 1px solid Aqua;
+  }
+  div.ovale:nth-child(2n) {
+    background: BlanchedAlmond;
+  }
+  img.picto {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 80px;
+    left: 90px;
+  }
+  section.carre {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    float: left;
+  }
+  p.texte {
+    background: beige;
+    width: 100%;
+    height: 230px;
+    margin-bottom: 30px;
+    padding: 10px;
+  }
+  footer {
+    background: #000;
+    height: auto;
+    width: 100%;
+    float: left;
+  }
+  div.global {
+    /*background: steelblue;*/
+    margin: auto;
+    height: 850px;
+    width: 100%;
+  }
+  div.footer {
+    width: 100%;
+    height: 400px;
+    margin: 5px 0px;
+    background: Tan;
+    float: left;
+  }
+
+  div.footer:last-child {
+    background: Gainsboro;
+  }
+
+}

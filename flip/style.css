@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.global {
+  width: 640px;
+  height: auto;
+  display: flex;
+  flex-flow: row wrap;
+  background: MistyRose;
+  margin: auto;
+}
+
+.container {
+  max-width: 320px;
+  perspective: 600px;
+}
+
+.container:hover .page {
+  transform: rotateY(180deg);
+}
+
+.container, .devant, .arriere {
+  width: 320px;
+  height: 480px;
+}
+
+.page {
+  transition: 0.6s;
+  position: relative;
+  transform-style: preserve-3d;
+}
+
+.devant, .arriere {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.arriere {
+  transform: rotateY(180deg);
+  background: black;
+  padding: 25px;
+  color: white;
+  text-align: justify;
+}
+
+.devant {
+  z-index: 2;
+  transform: rotateY(0deg);
+}
+
+a {
+  display: block;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  background: Gainsboro;
+  border-radius: 15px;
+  margin: 50px auto 0;
+  text-align: center;
+  font-size: 14px;
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  background: LightYellow;
+  color: black;
+}
+
+/* ROTATEX */
+
+.container_x {
+  max-width: 320px;
+  perspective: 600px;
+}
+
+.container_x:hover .page_x {
+  transform: rotateX(180deg);
+  transform-origin: 100% 240px;
+}
+
+.container_x, .devant_x, .arriere_x {
+  width: 320px;
+  height: 480px;
+}
+
+.page_x {
+  transition: 0.6s;
+  position: relative;
+  transform-style: preserve-3d;
+}
+
+.devant_x, .arriere_x {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.arriere_x {
+  transform: rotateX(180deg);
+  background: black;
+  padding: 25px;
+  color: white;
+  text-align: justify;
+}
+
+.devant_x {
+  z-index: 2;
+  transform: rotateX(0deg);
+}
